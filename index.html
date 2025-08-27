@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal portfolio showcasing my data skills, projects, and achievements." />
+    <title>My Portfolio — Data & Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Elegant, legible fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Header / Nav -->
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="#home" aria-label="Home">
+                <span class="brand-mark" aria-hidden="true">◆</span>
+                <span class="brand-text">My Portfolio</span>
+            </a>
+
+            <!-- Mobile nav (CSS-only) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav class="nav">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#skills">skills</a>
+                <a href="#projects">projects</a>
+                <a href="#achievements">achievements</a>
+                <a href="#contact" class="nav-cta">contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-media">
+                <!-- Replace profile.jpg with your image -->
+                <img src="B612_20231125_215342_972.jpg"
+                    alt="Portrait of me" class="avatar" />
+            </div>
+            <div class="hero-copy">
+                <h1 class="display">
+                    Hi, I'm <span class="accent">Dixika</span>
+                </h1>
+                <p class="subtitle">
+                    I am a Computer Science Engineering graduate skilled in Python, SQL, Power BI, and Machine Learning.
+                    I specialize in building efficient data pipelines, interactive dashboards, and intelligent models
+                    that turn data into actionable insights. With a strong mix of technical expertise and
+                    problem-solving ability, I aim to create solutions that drive real-world impact.
+                </p>
+                <div class="hero-actions">
+                    <a href="Dixika - final python.pdf"
+                        class="btn btn-solid" download>download resume</a>
+                    <a href="#projects" class="btn btn-ghost">view my work</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container narrow">
+            <h2 class="section-title">about me</h2>
+            <p class="lead">
+                I am a Computer Science Engineering graduate with a strong foundation in Python, SQL, software
+                development, and web technologies. My academic projects, including a privacy-preserving federated
+                learning system and interactive business dashboards, highlight my ability to design secure, scalable,
+                and user-friendly solutions. Alongside technical proficiency in tools such as Power BI, Excel, and
+                Jupyter Notebook, I bring problem-solving, adaptability, and leadership skills gained from managing
+                projects and college events. I aspire to build a career in IT where I can contribute to software
+                development, data-driven applications, and digital transformation initiatives.
+            </p>
+            <ul class="quick-facts">
+                <li><span>location:</span> open to remote / on-site</li>
+                <li><span>strengths:</span> pattern-finding, clear communication, tidy implementations</li>
+                <li><span>interests:</span> analytics, ml basics, data viz, product thinking</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills (Card grid) -->
+    <section id="skills" class="section alt">
+        <div class="container">
+            <h2 class="section-title">skills i rely on</h2>
+
+            <div class="grid cards">
+                <!-- Programming & Data -->
+                <article class="card">
+                    <div class="card-head">
+                        <div class="badge">core</div>
+                        <h3>programming & data</h3>
+                    </div>
+                    <p class="card-text">
+                        I rely on strong programming and data handling skills. From writing Python scripts to mastering
+                        SQL queries and leveraging Excel, I ensure that data is processed, organized, and ready for
+                        impactful analysis.
+                    </p>
+                    <ul class="pill-list">
+                        <li>python</li>
+                        <li>advanced sql</li>
+                        <li>ms excel</li>
+                    </ul>
+                </article>
+
+                <!-- Data Visualization & BI -->
+                <article class="card">
+                    <div class="card-head">
+                        <div class="badge">analysis</div>
+                        <h3>data visualization & bi</h3>
+                    </div>
+                    <p class="card-text">
+                        I create insightful dashboards and reports that communicate results effectively. Using tools
+                        like Power BI, Power Query, and DAX, alongside Python visualization libraries, I make
+                        data-driven stories clear and actionable.
+                    </p>
+                    <ul class="pill-list">
+                        <li>power bi</li>
+                        <li>power query</li>
+                        <li>dax</li>
+                        <li>matplotlib</li>
+                        <li>pandas</li>
+                        <li>numpy</li>
+                    </ul>
+                </article>
+
+                <!-- Software Tools -->
+                <article class="card">
+                    <div class="card-head">
+                        <div class="badge">tools</div>
+                        <h3>software tools</h3>
+                    </div>
+                    <p class="card-text">
+                        I make use of powerful development and data environments to streamline work. These tools help me
+                        code faster, experiment with ideas, and deliver polished outcomes.
+                    </p>
+                    <ul class="pill-list">
+                        <li>visual studio</li>
+                        <li>intellij</li>
+                        <li>jupyter notebook</li>
+                    </ul>
+                </article>
+
+                <!-- Other Skills -->
+                <article class="card">
+                    <div class="card-head">
+                        <div class="badge">extras</div>
+                        <h3>other skills</h3>
+                    </div>
+                    <p class="card-text">
+                        Beyond core analytics and programming, I have practical experience in web design, automation,
+                        and data management — skills that complement my technical foundation and enhance project impact.
+                    </p>
+                    <ul class="pill-list">
+                        <li>html</li>
+                        <li>css</li>
+                        <li>data cleaning</li>
+                        <li>dashboard development</li>
+                        <li>report automation</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">selected projects</h2>
+
+            <div class="grid projects">
+                <!-- Project 1 -->
+
+                <article class="project">
+                    <div class="project-top">
+                        <h3>Hotel Analysis Dashboard</h3>
+                        <span class="tag">Power BI</span>
+                    </div>
+                    <p class="project-text">
+                        I built a compact dashboard for sales and cohort trends. Stakeholders now scan performance in
+                        seconds and spot where to lean in next.
+                    </p>
+                    <div class="actions">
+                        <!-- Link to PDF -->
+                        <a class="btn btn-line" href="C:\Users\priyanshu\Downloads\hotel analysis dashboard.pdf"
+                            target="_blank" rel="noopener">view dashboard</a>
+
+                        <!-- GitHub link -->
+                        <a class="btn btn-github" href="https://github.com/yourusername/project-dashboard"
+                            target="_blank" rel="noopener" aria-label="View on GitHub">
+                            <svg viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M8 .2a8 8 0 0 0-2.53 15.6c.4.07.55-.18.55-.39v-1.34c-2.25.49-2.72-1.09-2.72-1.09-.37-.95-.9-1.2-.9-1.2-.74-.5.06-.49.06-.49.82.06 1.26.85 1.26.85.73 1.25 1.92.89 2.39.68.07-.53.29-.89.53-1.1-1.8-.2-3.7-.9-3.7-4.02 0-.89.32-1.61.85-2.18-.09-.2-.37-1.02.08-2.12 0 0 .7-.22 2.3.83a7.9 7.9 0 0 1 4.2 0c1.6-1.05 2.3-.83 2.3-.83.45 1.1.17 1.92.08 2.12.53.57.85 1.3.85 2.18 0 3.13-1.9 3.82-3.72 4.02.3.26.57.77.57 1.55v2.29c0 .21.15.46.56.38A8 8 0 0 0 8 .2Z" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Project 2 -->
+                <article class="project">
+                    <div class="project-top">
+                        <h3>sales dashboard</h3>
+                        <span class="tag">power bi</span>
+                    </div>
+                    <p class="project-text">
+                        i built a compact dashboard for sales and cohort trends. stakeholders now scan performance in
+                        seconds and spot where to lean in next.
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn-line" href="#" target="_blank" rel="noopener">view dashboard</a>
+                        <a class="btn btn-github" href="https://github.com/yourusername/project-dashboard"
+                            target="_blank" rel="noopener" aria-label="View on GitHub">
+                            <svg viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M8 .2a8 8 0 0 0-2.53 15.6c.4.07.55-.18.55-.39v-1.34c-2.25.49-2.72-1.09-2.72-1.09-.37-.95-.9-1.2-.9-1.2-.74-.5.06-.49.06-.49.82.06 1.26.85 1.26.85.73 1.25 1.92.89 2.39.68.07-.53.29-.89.53-1.1-1.8-.2-3.7-.9-3.7-4.02 0-.89.32-1.61.85-2.18-.09-.2-.37-1.02.08-2.12 0 0 .7-.22 2.3.83a7.9 7.9 0 0 1 4.2 0c1.6-1.05 2.3-.83 2.3-.83.45 1.1.17 1.92.08 2.12.53.57.85 1.3.85 2.18 0 3.13-1.9 3.82-3.72 4.02.3.26.57.77.57 1.55v2.29c0 .21.15.46.56.38A8 8 0 0 0 8 .2Z" />
+                            </svg>
+                            github
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project">
+                    <div class="project-top">
+                        <h3>clean data pipeline</h3>
+                        <span class="tag">python + etl</span>
+                    </div>
+                    <p class="project-text">
+                        i designed a simple pipeline to fetch, validate, and stage daily data. fewer manual fixes, more
+                        trust in the numbers.
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn-line" href="#" target="_blank" rel="noopener">read docs</a>
+                        <a class="btn btn-github" href="https://github.com/yourusername/project-pipeline"
+                            target="_blank" rel="noopener" aria-label="View on GitHub">
+                            <svg viewBox="0 0 16 16" aria-hidden="true">
+                                <path
+                                    d="M8 .2a8 8 0 0 0-2.53 15.6c.4.07.55-.18.55-.39v-1.34c-2.25.49-2.72-1.09-2.72-1.09-.37-.95-.9-1.2-.9-1.2-.74-.5.06-.49.06-.49.82.06 1.26.85 1.26.85.73 1.25 1.92.89 2.39.68.07-.53.29-.89.53-1.1-1.8-.2-3.7-.9-3.7-4.02 0-.89.32-1.61.85-2.18-.09-.2-.37-1.02.08-2.12 0 0 .7-.22 2.3.83a7.9 7.9 0 0 1 4.2 0c1.6-1.05 2.3-.83 2.3-.83.45 1.1.17 1.92.08 2.12.53.57.85 1.3.85 2.18 0 3.13-1.9 3.82-3.72 4.02.3.26.57.77.57 1.55v2.29c0 .21.15.46.56.38A8 8 0 0 0 8 .2Z" />
+                            </svg>
+                            github
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section alt">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <ul class="timeline">
+                <li>
+                    <span class="dot"></span>
+                    <div class="time-card">
+                        <h4>Data Analysis and Visualization with Power BI</h4>
+                        <p>Completed a hands-on track covering SQL, Python, and data visualization best practices using
+                            Power BI</p>
+                        <a href="https://www.coursera.org/account/accomplishments/records/NH6JRYEMZ86Q"
+                            target="_blank">View Certificate</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="dot"></span>
+                    <div class="time-card">
+                        <h4>Deploy and Maintain Power BI Assets – Capstone Project</h4>
+                        <p>Developed and deployed a Power BI solution with real-time dashboards and row-level security,
+                            enabling smarter decision-making and proactive insights for business users</p>
+                        <a href="https://www.coursera.org/account/accomplishments/records/MOQOZV3H75RD"
+                            target="_blank">View Certificate</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="dot"></span>
+                    <div class="time-card">
+                        <h4>Principles of UX/UI Design</h4>
+                        <p>Completed training on user experience and interface design fundamentals, focusing on creating
+                            intuitive, user-friendly, and visually engaging digital products.</p>
+                        <a href="https://www.coursera.org/account/accomplishments/records/ZNCX4SBX6LC3"
+                            target="_blank">View Certificate</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="dot"></span>
+                    <div class="time-card">
+                        <h4>AI & Machine Learning Foundations</h4>
+                        <p>Completed training in AI/ML concepts, algorithms, and practical implementation using Python
+                        </p>
+                        <a href="YOUR_CERTIFICATE_LINK_HERE" target="_blank">View Certificate</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="dot"></span>
+                    <div class="time-card">
+                        <h4>Version Control</h4>
+                        <p>Learned the fundamentals of Git and GitHub, including branching, merging, and collaboration
+                            workflows, to manage code efficiently and track project changes.</p>
+                        <a href="https://www.coursera.org/account/accomplishments/records/7BXCFL3WKHDG"
+                            target="_blank">View Certificate</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="dot"></span>
+                    <div class="time-card">
+                        <h4>Programming with JavaScript</h4>
+                        <p>Acquired hands-on experience in core JavaScript concepts, including variables, functions,
+                            loops, and event handling, to build dynamic and interactive web applications.</p>
+                        <a href="https://www.coursera.org/account/accomplishments/records/CE6F3UQ9BC6G"
+                            target="_blank">View Certificate</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container narrow">
+            <h2 class="section-title">let’s connect</h2>
+            <p class="lead">
+                if my work looks like a fit, i’d love to talk. email is best, but i’m active on github and linkedin too.
+            </p>
+            <div class="contact-grid">
+                <a class="contact-card" href="mailto:dixika2001@gmail.com">
+                    <span class="contact-label">email</span>
+                    <span class="contact-value">dixika2001@gmail.com</span>
+                </a>
+                <a class="contact-card" href="https://github.com/lily-it" target="_blank" rel="noopener">
+                    <span class="contact-label">github</span>
+                    <span class="contact-value">github.com/lily-it</span>
+                </a>
+                <a class="contact-card" href="https://www.linkedin.com/in/dixika-thakur-928b20369/" target="_blank"
+                    rel="noopener">
+                    <span class="contact-label">linkedin</span>
+                    <span class="contact-value">linkedin.com/in/dixika-thakur-928b20369</span>
+                </a>
+                <a class="contact-card"
+                    href="Dixika - final python.pdf" download>
+                    <span class="contact-label">resume</span>
+                    <span class="contact-value">download pdf</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>© 2025 your name. crafted with care.</p>
+            <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+        </div>
+    </footer>
+</body>
+
+</html>
